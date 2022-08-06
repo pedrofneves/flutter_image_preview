@@ -1,7 +1,7 @@
 name: flutter_image_preview
 description: Image previewer.
 version: 0.1.0
-homepage:
+repository: https://github.com/pedrofneves/flutter_image_preview
 
 environment:
   sdk: ">=2.17.6 <3.0.0"

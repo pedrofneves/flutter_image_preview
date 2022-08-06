@@ -1,6 +1,6 @@
 name: flutter_image_preview
-description: Image previewer.
-version: 0.1.0
+description: Modal image previewer
+version: 0.1.1
 repository: https://github.com/pedrofneves/flutter_image_preview
 
 environment:

@@ -33,15 +33,13 @@ class _ImagePreviewDialog extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () => Navigator.of(context).pop(),
-      child: Column(
-        mainAxisSize: MainAxisSize.max,
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          InteractiveViewer(
-            clipBehavior: Clip.none,
-            child: Image.asset(assetName),
-          ),
-        ],
+      child: ConstrainedBox(
+        constraints: const BoxConstraints.expand(),
+        child: InteractiveViewer(
+          clipBehavior: Clip.none,
+          maxScale: 5.0,
+          child: Image.asset(assetName),
+        ),
       ),
     );
   }
